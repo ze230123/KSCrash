@@ -120,6 +120,8 @@ NS_SWIFT_NAME(CrashReportFilterAppleFmt)
  */
 - (instancetype)init;
 
+- (NSString*) toAppleFormat:(NSDictionary*)report;
+
 /** Generate a header string for the Apple-style crash report.
  * @param system Dictionary containing system information (e.g., device, OS, app details).
  * @param reportID Unique identifier for the crash report.
